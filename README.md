@@ -50,6 +50,8 @@
 링크나 이미지를 누르면 실제 사이트가 열립니다.
 
 ### 크라토스 (외주 개발사 홈페이지)
+외주 개발사 소개·견적 상담 사이트. 체험형 데모 10종을 함께 운영.
+
 <a href="https://kratos1.cloud/"><img src="shots/designs/kratos/home.png" width="49%" alt="홈"></a>
 <a href="https://kratos1.cloud/demos"><img src="shots/designs/kratos/demos.png" width="49%" alt="데모 모음"></a>
 
@@ -57,6 +59,8 @@
 - 데모 모음: https://kratos1.cloud/demos
 
 ### 케이·에스컬레이터 (제조사 홈페이지 · 시안 3종)
+같은 회사를 세 가지 방향(기본·현대형·백과사전형)으로 제안한 시안.
+
 <a href="https://kratos1.cloud/escalator/"><img src="shots/designs/k-escalator/base.png" width="32%" alt="기본형"></a>
 <a href="https://kratos1.cloud/p/ke-hyundai/"><img src="shots/designs/k-escalator/hyundai.png" width="32%" alt="현대형"></a>
 <a href="https://kratos1.cloud/p/ke-hpedia/"><img src="shots/designs/k-escalator/hpedia.png" width="32%" alt="백과사전형"></a>
@@ -66,6 +70,8 @@
 - 백과사전형: https://kratos1.cloud/p/ke-hpedia/
 
 ### EPIC (인사·조직 컨설팅 · 시안 2종)
+컨설팅 회사의 신뢰감을 살린 두 가지 레이아웃 시안.
+
 <a href="https://kratos1.cloud/p/epic/"><img src="shots/designs/epic/a.png" width="49%" alt="1안"></a>
 <a href="https://kratos1.cloud/p/epic-jbfg-1009/"><img src="shots/designs/epic/b.png" width="49%" alt="2안"></a>
 
@@ -73,16 +79,22 @@
 - 2안: https://kratos1.cloud/p/epic-jbfg-1009/
 
 ### 강남노무법인 K-LABOR
+노무법인 홈페이지 리뉴얼. WorkSign과 연결.
+
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/"><img src="shots/designs/k-labor/home.png" width="49%" alt="K-LABOR"></a>
 
 - K-LABOR: https://kratos1.cloud/p/klabor-7f3c9a/
 
 ### EGATTOC (웰니스 쇼핑몰)
+식품·바디케어 웰니스 쇼핑몰.
+
 <a href="https://cyb3rmaya.github.io/egattoc-wellness/"><img src="shots/designs/egattoc/home.png" width="49%" alt="EGATTOC"></a>
 
 - EGATTOC: https://cyb3rmaya.github.io/egattoc-wellness/
 
 ### 바로시작 (청년 취업지원제도 안내 챗봇 시제품)
+질문 몇 개로 받을 수 있는 지원금을 안내하는 챗봇 시제품.
+
 <a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/designs/barosijak/home.png" width="49%" alt="바로시작"></a>
 
 - 바로시작: https://cyb3rmaya.github.io/barosijak-demo/
