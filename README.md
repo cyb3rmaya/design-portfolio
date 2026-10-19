@@ -15,7 +15,7 @@
 | 9 | 인사·조직 컨설팅 회사 홈페이지 (EPIC 1안) | https://kratos1.cloud/p/epic/ |
 | 10 | 인사·조직 컨설팅 회사 홈페이지 (EPIC 2안) | https://kratos1.cloud/p/epic-jbfg-1009/ |
 | 11 | 청년 취업지원제도 안내 챗봇 (바로시작) | https://cyb3rmaya.github.io/barosijak-demo/ |
-| 12 | 청소년 주식 학습 모의투자 앱 (스톡업) | 배포 준비 중 (아래 화면 참고) |
+| 12 | 청소년 주식 학습 모의투자 앱 (스톡업) · 실시세 | https://stockup.kratos1.cloud/ |
 | 13 | 모바일 전자근로계약서 서비스 (WorkSign) | https://worksign.co.kr/ |
 
 ### 1. 외주 개발 회사 크라토스 공식 홈페이지
@@ -51,8 +51,8 @@
 ### 11. 청년 취업지원제도 안내 챗봇 (바로시작)
 <a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/11.png" width="720" alt="청년 취업지원제도 안내 챗봇 (바로시작)"></a>
 
-### 12. 청소년 주식 학습 모의투자 앱 (스톡업)
-<img src="shots/12.png" width="320" alt="청소년 주식 학습 모의투자 앱 (스톡업)">
+### 12. 청소년 주식 학습 모의투자 앱 (스톡업) · 실시세
+<a href="https://stockup.kratos1.cloud/"><img src="shots/12.png" width="320" alt="청소년 주식 학습 모의투자 앱 (스톡업)"></a>
 
 ### 13. 모바일 전자근로계약서 서비스 (WorkSign)
 <a href="https://worksign.co.kr/"><img src="shots/13.png" width="720" alt="모바일 전자근로계약서 서비스 (WorkSign)"></a>
