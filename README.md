@@ -16,32 +16,51 @@
 ### 1. WorkSign — 모바일 전자근로계약서
 **https://worksign.co.kr**
 
-<a href="https://worksign.co.kr"><img src="shots/projects/worksign.png" width="720" alt="WorkSign"></a>
+노무법인 의뢰로 만든 실서비스. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다.
 
-노무법인 의뢰로 만든 실서비스. 사업주가 계약서를 보내면 근로자가 휴대폰으로 서명하고, 서명된 문서는 위·변조를 막도록 봉인됩니다.
-
+- **핵심 로직**: 문서 변환 → 입력칸 지정(텍스트·날짜·금액·서명·도장) → 일괄 발송 → 모바일 서명 → 봉인·보관 · 발송 실적·비회신 추적
 - **만든 방법**: Next.js 15 · Prisma · Postgres(Supabase) · 문서 처리 워커 · Docker · AWS 서울 서버
-- **AI 활용**: 고객 지시를 AI 작업 지침서로 정리해 변경 요청마다 근거를 남기고, AI가 구현한 결과를 자동 검사로 검증 — 테스트 329개 통과 · 접근성(WCAG 2.2) 위반 0건 · Lighthouse 100점
+- **AI 활용**: 고객 지시를 AI 작업 지침서로 정리해 변경 요청마다 근거를 남기고, AI가 구현한 결과를 자동 검사로 검증 — 테스트 329개 · 접근성(WCAG 2.2) 위반 0건 · Lighthouse 100점
+
+<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="WorkSign"></a>
+
+| 입력칸 지정 에디터 | 근로자 모바일 서명 |
+|---|---|
+| <img src="shots/projects/worksign/editor.png" width="480"> | <img src="shots/projects/worksign/sign.png" width="220"> |
+| **발송 마법사** | **발송 실적·비회신 추적** |
+| <img src="shots/projects/worksign/send.png" width="480"> | <img src="shots/projects/worksign/reports.png" width="480"> |
+
+<sub>화면 캡처는 가상 회사·가상 인물 데이터입니다.</sub>
 
 ### 2. StockUp — 청소년 주식 학습 모의투자 앱
 **https://stockup.kratos1.cloud**
 
-<a href="https://stockup.kratos1.cloud"><img src="shots/projects/stockup.png" width="320" alt="StockUp"></a>
-
 만 15세 이상 청소년이 가상 자금으로 투자를 배우는 앱. 실제 시세로 연습하고, 레슨·퀴즈로 개념을 익힙니다.
 
-- **만든 방법**: Next.js 16 · 토스증권 Open API 실시세 · 금융감독원 DART 재무 데이터 · Supabase · AWS 서울 서버
+- **핵심 로직**: 토스증권 실시세(국내·미국) → 종목 상세(차트·호가·수급) → 모의 주문(지정가·시장가, 수수료·체결 예상) → 레벨별 학습 51장
+- **만든 방법**: Next.js 16 · 토스증권 Open API · 금융감독원 DART 재무 데이터 · Supabase · AWS 서울 서버
 - **AI 활용**: 화면·버튼 단위로 AI가 여러 관점(학습자·보호자·규제)에서 비판 검토 → 확정된 문제만 고치는 루프로 품질 관리 · 학습 영상을 AI 음성과 Remotion으로 자동 생성하는 파이프라인 구축
+
+| 홈 | 실시세 | 종목 상세 | 모의 주문 | 학습 |
+|---|---|---|---|---|
+| <a href="https://stockup.kratos1.cloud"><img src="shots/projects/stockup/home.png" width="150"></a> | <img src="shots/projects/stockup/market.png" width="150"> | <img src="shots/projects/stockup/detail.png" width="150"> | <img src="shots/projects/stockup/order.png" width="150"> | <img src="shots/projects/stockup/learn.png" width="150"> |
 
 ### 3. GTO KRATOS — 포커 전략 학습·게임 웹앱
 **https://kratos1.cloud/gtokrato**
 
-<a href="https://kratos1.cloud/gtokrato"><img src="shots/projects/gtokrato.png" width="720" alt="GTO KRATOS"></a>
-
 포커 전략(GTO)을 공부하고 바로 실전처럼 연습하는 웹앱. 홀덤 방·Sit & Go, 바카라, 블랙잭을 게임 머니로 즐깁니다.
 
+- **핵심 로직**: 포지션별 GTO 전략표(169핸드 액션 비율) · 실시간 홀덤 방(캐시·싯앤고·헤즈업) · 연습 모드 채점 · 회원·지갑·충전 신청
 - **만든 방법**: 외부 라이브러리 없는 Node 서버 · 게임 엔진 · SQLite + Supabase 이중 저장
 - **AI 활용**: 게임 규칙·확률 엔진과 실시간 방 서버를 AI와 함께 설계·구현하고, 버전마다 AI 검토로 규칙 오류를 잡아냄
+
+<a href="https://kratos1.cloud/gtokrato"><img src="shots/projects/gtokrato/home.png" width="720" alt="GTO KRATOS"></a>
+
+| GTO 전략표 (Study) | 홀덤 방 로비 |
+|---|---|
+| <img src="shots/projects/gtokrato/study.png" width="480"> | <img src="shots/projects/gtokrato/lobby.png" width="480"> |
+| **연습 모드 (Practice)** | **회원가입·지갑** |
+| <img src="shots/projects/gtokrato/practice.png" width="480"> | <img src="shots/projects/gtokrato/signup.png" width="480"> |
 
 ---
 
