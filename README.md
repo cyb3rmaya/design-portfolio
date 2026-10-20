@@ -79,11 +79,15 @@
 - 2안: https://kratos1.cloud/p/epic-jbfg-1009/
 
 ### 강남노무법인 K-LABOR
-노무법인 홈페이지 리뉴얼. WorkSign과 연결.
+노무법인 홈페이지 리뉴얼. 관리자 대시보드와 AI 노무 자가진단까지 한 세트로 설계.
 
-<a href="https://kratos1.cloud/p/klabor-7f3c9a/"><img src="shots/designs/k-labor/home.png" width="49%" alt="K-LABOR"></a>
+- 홈페이지: https://kratos1.cloud/p/klabor-7f3c9a/
+- AI 노무 자가진단 (8문항으로 위험 항목 진단 → 상담 연결): https://kratos1.cloud/p/klabor-7f3c9a/ai-check/
+- 관리자 대시보드 (신청·상담·유입 통계 + AI 분석 챗봇, 입력 없이 로그인): https://kratos1.cloud/p/klabor-7f3c9a/admin/
 
-- K-LABOR: https://kratos1.cloud/p/klabor-7f3c9a/
+<a href="https://kratos1.cloud/p/klabor-7f3c9a/"><img src="shots/designs/k-labor/home.png" width="32%" alt="홈페이지"></a>
+<a href="https://kratos1.cloud/p/klabor-7f3c9a/ai-check/"><img src="shots/designs/k-labor/ai-check.png" width="32%" alt="AI 노무 자가진단"></a>
+<a href="https://kratos1.cloud/p/klabor-7f3c9a/admin/"><img src="shots/designs/k-labor/admin.png" width="32%" alt="관리자 대시보드"></a>
 
 ### 언양만화방 (24시간 만화카페)
 도서 검색·이용 요금·오시는 길을 한 화면에 담은 만화카페 홈페이지.
