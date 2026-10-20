@@ -50,17 +50,15 @@
 
 포커 전략(GTO)을 공부하고 바로 실전처럼 연습하는 웹앱. 홀덤 방·Sit & Go, 바카라, 블랙잭을 게임 머니로 즐깁니다.
 
-- **핵심 로직**: 포지션별 GTO 전략표(169핸드 액션 비율) · 실시간 홀덤 방(캐시·싯앤고·헤즈업) · 연습 모드 채점 · 회원·지갑·충전 신청 · 첫 방문 언어·국가 선택(시간대 자동 감지)
+- **핵심 로직**: 실시간 홀덤 테이블(캐시·싯앤고·헤즈업) · 선택마다 GTO 기준으로 채점하는 코칭(EV 손실·169핸드 전략표·솔버) · 첫 방문 언어·국가 선택(시간대 자동 감지)
 - **만든 방법**: 외부 라이브러리 없는 Node 서버 · 게임 엔진 · SQLite + Supabase 이중 저장
 - **AI 활용**: 게임 규칙·확률 엔진과 실시간 방 서버를 AI와 함께 설계·구현하고, 버전마다 AI 검토로 규칙 오류를 잡아냄
 
 <a href="https://kratos1.cloud/gtokrato"><img src="shots/projects/gtokrato/home.png" width="720" alt="GTO KRATOS"></a>
 
-| GTO 전략표 (Study) | 홀덤 방 로비 |
+| 홀덤 플레이 | GTO 코칭 (선택마다 채점·EV 손실·전략표) |
 |---|---|
-| <img src="shots/projects/gtokrato/study.png" width="480"> | <img src="shots/projects/gtokrato/lobby.png" width="480"> |
-| **연습 모드 (Practice)** | **회원가입·지갑** |
-| <img src="shots/projects/gtokrato/practice.png" width="480"> | <img src="shots/projects/gtokrato/signup.png" width="480"> |
+| <img src="shots/projects/gtokrato/play.png" width="480"> | <img src="shots/projects/gtokrato/coach.png" width="480"> |
 | **첫 방문 언어 선택 (14개 언어)** | **국가·시간대 선택 (자동 감지)** |
 | <img src="shots/projects/gtokrato/language.png" width="480"> | <img src="shots/projects/gtokrato/region.png" width="480"> |
 
