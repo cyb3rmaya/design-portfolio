@@ -85,6 +85,13 @@
 
 - K-LABOR: https://kratos1.cloud/p/klabor-7f3c9a/
 
+### 언양만화방 (24시간 만화카페)
+도서 검색·이용 요금·오시는 길을 한 화면에 담은 만화카페 홈페이지.
+
+- 언양만화방: https://eonyang-comic.pages.dev/
+
+<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="언양만화방"></a>
+
 ### EGATTOC (웰니스 쇼핑몰)
 식품·바디케어 웰니스 쇼핑몰.
 
