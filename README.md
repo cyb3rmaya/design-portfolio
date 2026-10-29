@@ -7,13 +7,13 @@
 
 | | 서비스 | 링크 |
 |---|---|---|
-| 1 | **WorkSign** · 모바일 전자근로계약서 | https://worksign.co.kr |
-| 2 | **StockUp** · 청소년 주식 학습 모의투자 앱 | https://stockup.kratos1.cloud |
+| 1 | **모바일 전자근로계약서 서비스** | https://worksign.co.kr |
+| 2 | **청소년 주식 학습 모의투자 앱** | https://stockup.kratos1.cloud |
 | 3 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
 
 ---
 
-### 1. WorkSign — 모바일 전자근로계약서
+### 1. 모바일 전자근로계약서 서비스
 **https://worksign.co.kr**
 
 노무법인 의뢰로 만든 실서비스. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다.
@@ -22,7 +22,7 @@
 - **만든 방법**: Next.js 15 · Prisma · Postgres(Supabase) · 문서 처리 워커 · Docker · AWS 서울 서버
 - **AI 활용**: 고객 지시를 AI 작업 지침서로 정리해 변경 요청마다 근거를 남기고, AI가 구현한 결과를 자동 검사로 검증 — 테스트 329개 · 접근성(WCAG 2.2) 위반 0건 · Lighthouse 100점
 
-<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="WorkSign"></a>
+<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="전자근로계약서"></a>
 
 | 입력칸 지정 에디터 | 근로자 모바일 서명 |
 |---|---|
@@ -32,7 +32,7 @@
 
 <sub>화면 캡처는 가상 회사·가상 인물 데이터입니다.</sub>
 
-### 2. StockUp — 청소년 주식 학습 모의투자 앱
+### 2. 청소년 주식 학습 모의투자 앱
 **https://stockup.kratos1.cloud**
 
 만 15세 이상 청소년이 가상 자금으로 투자를 배우는 앱. 실제 시세로 연습하고, 레슨·퀴즈로 개념을 익힙니다.
@@ -77,7 +77,7 @@
 - 홈: https://kratos1.cloud/
 - 데모 모음: https://kratos1.cloud/demos
 
-### 케이·에스컬레이터 (제조사 홈페이지 · 시안 3종)
+### 에스컬레이터 제조사 홈페이지 (시안 3종)
 같은 회사를 세 가지 방향(기본·현대형·백과사전형)으로 제안한 시안.
 
 <a href="https://kratos1.cloud/escalator/"><img src="shots/designs/k-escalator/base.png" width="32%" alt="기본형"></a>
@@ -88,7 +88,7 @@
 - 현대형: https://kratos1.cloud/p/ke-hyundai/
 - 백과사전형: https://kratos1.cloud/p/ke-hpedia/
 
-### EPIC (인사·조직 컨설팅 · 시안 2종)
+### 인사·조직 컨설팅사 홈페이지 (시안 2종)
 컨설팅 회사의 신뢰감을 살린 두 가지 레이아웃 시안.
 
 <a href="https://kratos1.cloud/p/epic/"><img src="shots/designs/epic/a.png" width="49%" alt="1안"></a>
@@ -97,7 +97,7 @@
 - 1안: https://kratos1.cloud/p/epic/
 - 2안: https://kratos1.cloud/p/epic-jbfg-1009/
 
-### 강남노무법인 K-LABOR
+### 노무법인 홈페이지 · 자가진단 · 관리자
 노무법인 홈페이지 리뉴얼. 관리자 대시보드와 AI 노무 자가진단까지 한 세트로 설계.
 
 - 홈페이지: https://kratos1.cloud/p/klabor-7f3c9a/
@@ -108,23 +108,23 @@
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/ai-check/"><img src="shots/designs/k-labor/ai-check.png" width="32%" alt="AI 노무 자가진단"></a>
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/admin/"><img src="shots/designs/k-labor/admin.png" width="32%" alt="관리자 대시보드"></a>
 
-### 언양만화방 (24시간 만화카페)
+### 24시간 만화카페 홈페이지
 도서 검색·이용 요금·오시는 길을 한 화면에 담은 만화카페 홈페이지.
 
-- 언양만화방: https://eonyang-comic.pages.dev/
+- 만화카페: https://eonyang-comic.pages.dev/
 
-<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="언양만화방"></a>
+<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="만화카페"></a>
 
-### EGATTOC (웰니스 쇼핑몰)
+### 웰니스 쇼핑몰
 식품·바디케어 웰니스 쇼핑몰.
 
-<a href="https://cyb3rmaya.github.io/egattoc-wellness/"><img src="shots/designs/egattoc/home.png" width="49%" alt="EGATTOC"></a>
+<a href="https://cyb3rmaya.github.io/egattoc-wellness/"><img src="shots/designs/egattoc/home.png" width="49%" alt="웰니스 쇼핑몰"></a>
 
-- EGATTOC: https://cyb3rmaya.github.io/egattoc-wellness/
+- 쇼핑몰: https://cyb3rmaya.github.io/egattoc-wellness/
 
-### 바로시작 (청년 취업지원제도 안내 챗봇 시제품)
+### 청년 취업지원제도 안내 챗봇 (시제품)
 질문 몇 개로 받을 수 있는 지원금을 안내하는 챗봇 시제품.
 
-<a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/designs/barosijak/home.png" width="49%" alt="바로시작"></a>
+<a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/designs/barosijak/home.png" width="49%" alt="안내 챗봇"></a>
 
-- 바로시작: https://cyb3rmaya.github.io/barosijak-demo/
+- 챗봇: https://cyb3rmaya.github.io/barosijak-demo/
