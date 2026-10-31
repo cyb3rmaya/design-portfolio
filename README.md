@@ -7,13 +7,13 @@
 
 | | 서비스 | 링크 |
 |---|---|---|
-| 1 | **모바일 전자근로계약서 서비스** | https://worksign.co.kr |
+| 1 | **WorkSign** · 모바일 전자근로계약서 | https://worksign.co.kr |
 | 2 | **청소년 주식 학습 모의투자 앱** | https://stockup.kratos1.cloud |
 | 3 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
 
 ---
 
-### 1. 모바일 전자근로계약서 서비스
+### 1. WorkSign — 모바일 전자근로계약서
 **https://worksign.co.kr**
 
 노무법인 의뢰로 만든 실서비스. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다.
@@ -22,7 +22,7 @@
 - **만든 방법**: Next.js 15 · Prisma · Postgres(Supabase) · 문서 처리 워커 · Docker · AWS 서울 서버
 - **AI 활용**: 고객 지시를 AI 작업 지침서로 정리해 변경 요청마다 근거를 남기고, AI가 구현한 결과를 자동 검사로 검증 — 테스트 329개 · 접근성(WCAG 2.2) 위반 0건 · Lighthouse 100점
 
-<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="전자근로계약서"></a>
+<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="WorkSign"></a>
 
 | 입력칸 지정 에디터 | 근로자 모바일 서명 |
 |---|---|
@@ -76,6 +76,15 @@
 
 - 홈: https://kratos1.cloud/
 - 데모 모음: https://kratos1.cloud/demos
+
+### 토너먼트 홀덤 트레이너
+랜덤 스팟마다 한 수를 고르면 GTO·ICM 기준으로 채점·해설하고, 봇과 실제 핸드를 치며 실시간 코치를 받는 학습 앱.
+
+- 트레이너: https://holdem-trainer-8hzx.onrender.com/
+
+<a href="https://holdem-trainer-8hzx.onrender.com/"><img src="shots/designs/holdem/trainer.png" width="32%" alt="스팟 채점"></a>
+<a href="https://holdem-trainer-8hzx.onrender.com/"><img src="shots/designs/holdem/bot.png" width="32%" alt="봇 대전·실시간 코치"></a>
+<a href="https://holdem-trainer-8hzx.onrender.com/"><img src="shots/designs/holdem/home.png" width="32%" alt="학습 홈"></a>
 
 ### 에스컬레이터 제조사 홈페이지 (시안 3종)
 같은 회사를 세 가지 방향(기본·현대형·백과사전형)으로 제안한 시안.
