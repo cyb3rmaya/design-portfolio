@@ -10,6 +10,7 @@
 | 1 | **WorkSign** · 모바일 전자근로계약서 | https://worksign.co.kr |
 | 2 | **청소년 주식 학습 모의투자 앱** | https://stockup.kratos1.cloud |
 | 3 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
+| 4 | **JARVIS** · macOS 한국어 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
 
 ---
 
@@ -61,6 +62,87 @@
 | <img src="shots/projects/gtokrato/play.png" width="480"> | <img src="shots/projects/gtokrato/coach.png" width="480"> |
 | **첫 방문 언어 선택 (14개 언어)** | **국가·시간대 선택 (자동 감지)** |
 | <img src="shots/projects/gtokrato/language.png" width="480"> | <img src="shots/projects/gtokrato/region.png" width="480"> |
+
+### 4. JARVIS — macOS 한국어 음성 비서
+**개인 프로젝트 · macOS 데스크톱 앱**
+
+"헤이 자비스"라고 부르면 듣고, Claude로 생각해 한국어로 대답하는 맥 음성 비서. 날씨·유튜브·음악·연락처·전화·메일·캘린더를 말로 다루고, 되돌리기 어려운 작업은 "실행 확인"이라고 말해야만 실행합니다.
+
+- **핵심 로직**: 호출어 감지 → 받아쓰기(맥 내장, 온디바이스 한국어) → Claude 스트리밍 응답 → 문장 단위로 끊어 음성 합성(다음 문장을 미리 합성) → 아이언맨 MK42 스타일 관제 화면 · "화면 작게"로 오브+자막 패널로 접힘
+- **만든 방법**: Electron + TypeScript · Swift 네이티브 헬퍼(macOS 26 SpeechTranscriber) · openWakeWord ONNX 호출어 모델 · Claude Agent SDK + MCP 도구 서버 5개(날씨·미디어·연락·화면·캘린더) · ElevenLabs 음성(실패 시 맥 내장 Yuna) · LaunchAgent 상시 실행
+- **안전 설계**: 두뇌는 MCP 도구만 쓸 수 있고 셸·파일 도구는 차단 · 전화·메일·일정 추가는 30초 안에 "실행 확인"을 말해야 통과 · 삭제류 캘린더 도구는 두뇌에 아예 노출하지 않음 · API 키는 키체인 암호화 저장
+- **AI 활용**: 설계 명세를 AI가 13개 관점으로 비판 검토해 112건을 반영한 뒤 구현 · 상태 전이표·음성 명령 매칭·호출어 파이프라인을 테스트 104개로 고정
+
+<img src="shots/projects/jarvis/hud.png" width="720" alt="JARVIS 관제 화면 — 대답하는 중">
+
+| 듣는 중 (실시간 받아쓰기) | 도구 호출 (유튜브 재생) |
+|---|---|
+| <img src="shots/projects/jarvis/listening.png" width="480"> | <img src="shots/projects/jarvis/tool.png" width="480"> |
+| **화면 작게 · 쓰기 작업 확인** | |
+| <img src="shots/projects/jarvis/confirm.png" width="480"> | |
+
+<sub>캡처는 실제 HUD 렌더러 코드에 시연용 상태값을 넣어 찍었습니다. 앱과 연결되는 부분만 대체했습니다.</sub>
+
+<details>
+<summary><b>주요 코드</b></summary>
+
+<sub>핵심 줄만 남겨 줄여 옮겼습니다.</sub>
+
+**쓰기 게이트** — 두뇌가 도구를 부를 때마다 거치는 관문. MCP 도구가 아니면 거부하고, 쓰기 도구는 음성 확인을 받아야 통과합니다.
+
+```ts
+export function makeCanUseTool(h: GateHooks): CanUseTool {
+  return async (toolName, input, { signal }) => {
+    if (!isMcpTool(toolName)) return { behavior: 'deny', message: '내장 도구는 쓸 수 없습니다' }
+    if (!WRITE_TOOLS.has(toolName)) return { behavior: 'allow', updatedInput: input }
+    const ok = await h.askConfirm(toolName, input, signal) // 30초 안에 "실행 확인"
+    return ok ? { behavior: 'allow', updatedInput: { ...input, confirmation: `hud:${Date.now()}` } }
+              : { behavior: 'deny', message: '보스가 실행을 확인하지 않았습니다. 취소합니다.' }
+  }
+}
+```
+
+**스트리밍 → 문장 단위 음성** — 대답이 다 끝나길 기다리지 않고, 문장이 완성되는 즉시 말하기 시작합니다.
+
+```ts
+for await (const msg of q) {
+  if (msg.type === 'stream_event' && msg.event.delta?.type === 'text_delta') {
+    for (const s of stream.push(msg.event.delta.text)) this.cb.onSentence(s) // 완성된 문장만
+  }
+  if (msg.type === 'result') for (const s of stream.flush()) this.cb.onSentence(s)
+}
+
+// 입: 지금 문장을 재생하는 동안 다음 문장을 미리 합성한다
+while (this.queue.length || next) {
+  const { s, mp3 } = await (next ?? take())
+  next = this.queue.length ? take() : null
+  mp3 ? await this.play('afplay', [mp3]) : await this.play('say', ['-v', 'Yuna', s])
+}
+```
+
+**호출어 감지** — 80ms 조각마다 앞 조각의 꼬리 30ms를 붙여 멜 스펙트로그램을 계산합니다. 이 꼬리가 빠져 있을 때는 시간축이 압축돼 점수가 0이었고, 붙인 뒤 합성 음성 기준 0.998이 나왔습니다.
+
+```ts
+async pushPcm16k(frame: Float32Array): Promise<number> {
+  const scaled = new Float32Array(480 + frame.length)   // 직전 꼬리 480샘플 + 이번 1280샘플
+  scaled.set(this.tail.map((v) => v * 32768)); scaled.set(frame.map((v) => v * 32768), 480)
+  this.tail = frame.slice(frame.length - 480)
+  // mel(마지막 8프레임) → 76프레임 창마다 임베딩 → 최근 임베딩 16개 → hey_jarvis 점수
+  ...
+}
+```
+
+**음성 명령은 완전일치만** — "그만", "실행 확인" 같은 명령은 문장 안에 섞여 있어도 오작동하지 않도록 정규화 후 완전일치로만 받습니다.
+
+```ts
+export function matchLocalIntent(utterance: string, enabled: readonly LocalIntent[]) {
+  const n = normalizeUtterance(utterance) // 공백·문장부호 제거
+  for (const intent of enabled) if (LOCAL_INTENTS[intent].some((p) => normalizeUtterance(p) === n)) return intent
+  return null
+}
+```
+
+</details>
 
 ---
 
