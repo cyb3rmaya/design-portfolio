@@ -103,11 +103,8 @@
 
 <img src="shots/projects/jarvis/hud.png" width="720" alt="ZEUS 관제 화면">
 
-| 듣는 중 (실시간 받아쓰기) | 도구 호출 (유튜브 재생) |
-|---|---|
-| <img src="shots/projects/jarvis/listening.png" width="480"> | <img src="shots/projects/jarvis/tool.png" width="480"> |
-| **화면 작게 · 쓰기 작업 확인** | |
-| <img src="shots/projects/jarvis/confirm.png" width="480"> | |
+<sub>관제 화면: 시계·날씨·마이크·Claude 사용량·위치·메일·영상 공장·뉴스 패널. 개인 정보(위치·메일·뉴스)는 블러 처리했습니다.</sub>
+
 
 <sub>캡처는 실제 HUD 렌더러 코드에 시연용 상태값을 넣어 찍었습니다. 앱과 연결되는 부분만 대체했습니다.</sub>
 
