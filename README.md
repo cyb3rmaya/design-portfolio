@@ -26,7 +26,7 @@
 | 1 | **WorkSign** · 모바일 전자근로계약서 | https://worksign.co.kr |
 | 2 | **청소년 주식 학습 모의투자 앱** | https://stockup.kratos1.cloud |
 | 3 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
-| 4 | **JARVIS** · macOS 한국어 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
+| 4 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
 
 ---
 
@@ -91,17 +91,17 @@
 | **첫 방문 언어 선택 (14개 언어)** | **국가·시간대 선택 (자동 감지)** |
 | <img src="shots/projects/gtokrato/language.png" width="480"> | <img src="shots/projects/gtokrato/region.png" width="480"> |
 
-### 4. JARVIS — macOS 한국어 음성 비서
+### 4. ZEUS(제우스) — macOS 한국어 AI 음성 비서
 **개인 프로젝트 · macOS 데스크톱 앱**
 
-"헤이 자비스"라고 부르면 듣고, Claude로 생각해 한국어로 대답하는 맥 음성 비서. 날씨·유튜브·음악·연락처·전화·메일·캘린더를 말로 다루고, 되돌리기 어려운 작업은 "실행 확인"이라고 말해야만 실행합니다.
+호출어나 박수로 부르면 듣고, Claude로 생각해 한국어로 대답하는 맥 AI 비서 '제우스'. 잠든 상태에서는 바탕화면 아이콘으로 깨우고, 깨어나면 날씨·메일을 정리한 음성 브리핑으로 하루를 시작합니다. 날씨·유튜브·음악·연락처·전화·메일·캘린더를 말로 다루고, 되돌리기 어려운 작업은 "실행 확인"이라고 말해야만 실행합니다.
 
 - **핵심 로직**: 호출어 감지 → 받아쓰기(맥 내장, 온디바이스 한국어) → Claude 스트리밍 응답 → 문장 단위로 끊어 음성 합성(다음 문장을 미리 합성) → 아이언맨 MK42 스타일 관제 화면 · "화면 작게"로 오브+자막 패널로 접힘
-- **만든 방법**: Electron + TypeScript · Swift 네이티브 헬퍼(macOS 26 SpeechTranscriber) · openWakeWord ONNX 호출어 모델 · Claude Agent SDK + MCP 도구 서버 5개(날씨·미디어·연락·화면·캘린더) · ElevenLabs 음성(실패 시 맥 내장 Yuna) · LaunchAgent 상시 실행
+- **만든 방법**: Electron + TypeScript · Swift 네이티브 헬퍼(macOS 26 SpeechTranscriber) · openWakeWord ONNX 호출어 모델 · Claude Agent SDK + MCP 도구 서버 5개(날씨·미디어·연락·화면·캘린더) · ElevenLabs·Typecast 제우스 음성(실패 시 맥 내장 Yuna) · LaunchAgent 상시 실행
 - **안전 설계**: 두뇌는 MCP 도구만 쓸 수 있고 셸·파일 도구는 차단 · 전화·메일·일정 추가는 30초 안에 "실행 확인"을 말해야 통과 · 삭제류 캘린더 도구는 두뇌에 아예 노출하지 않음 · API 키는 키체인 암호화 저장
 - **AI 활용**: 설계 명세를 AI가 13개 관점으로 비판 검토해 112건을 반영한 뒤 구현 · 상태 전이표·음성 명령 매칭·호출어 파이프라인을 테스트 104개로 고정
 
-<img src="shots/projects/jarvis/hud.png" width="720" alt="JARVIS 관제 화면 — 대답하는 중">
+<img src="shots/projects/jarvis/hud.png" width="720" alt="ZEUS 관제 화면">
 
 | 듣는 중 (실시간 받아쓰기) | 도구 호출 (유튜브 재생) |
 |---|---|
