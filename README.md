@@ -3,6 +3,22 @@
 기획부터 배포까지 혼자 맡아, AI(Claude Code·Codex)를 개발 파트너로 써서 만든 결과물입니다.
 **AI가 코드를 쓰고, 저는 기획·설계·판단·검수를 맡습니다.** 명세 → 작업 계획 → 구현 → AI 다관점 검토 → 수정 순서로 반복합니다.
 
+## 고용노동부 고용24 AI 해커톤 출품작
+
+### 바로시작 — 국민취업지원제도 안내 시제품 (서류심사 통과)
+**https://cyb3rmaya.github.io/barosijak-demo/**
+
+메뉴가 많아 막막한 구직자에게 나이 질문 하나로 시작해, 해야 할 일을 날짜별로 정리해 주는 안내 시제품입니다.
+
+- **핵심 로직**: 대화로 상황 파악 → 수급자격 통지일 등 날짜로 이번 주 할 일·다가오는 기한·놓치면 사라지는 것 분류 → 큰 절차를 하루 한 가지 미션으로 쪼갬
+- **신뢰 설계**: 금액·기한은 AI가 만들지 않고 사람이 원문과 대조한 고정표만 사용 · 모든 안내에 업무매뉴얼 쪽수 근거 표기 · 자격 판정이 아님을 명시(최종 판단은 고용센터)
+
+| 시작 대화 | 내 날짜 일정 | 오늘의 미션 |
+|---|---|---|
+| <a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/projects/barosijak/1-chat.png" width="220"></a> | <img src="shots/projects/barosijak/2-schedule.png" width="220"> | <img src="shots/projects/barosijak/3-mission.png" width="220"> |
+
+---
+
 ## 대표 프로젝트
 
 | | 서비스 | 링크 |
@@ -17,13 +33,20 @@
 ### 1. WorkSign — 모바일 전자근로계약서
 **https://worksign.co.kr**
 
-노무법인 의뢰로 만든 실서비스. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다.
+노무법인 의뢰로 만든 실서비스. 최근 랜딩을 4단계 흐름·기능 카드·근로자 휴대폰 시연 중심으로 전면 개편했습니다. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다.
 
 - **핵심 로직**: 문서 변환 → 입력칸 지정(텍스트·날짜·금액·서명·도장) → 일괄 발송 → 모바일 서명 → 봉인·보관 · 발송 실적·비회신 추적
 - **만든 방법**: Next.js 15 · Prisma · Postgres(Supabase) · 문서 처리 워커 · Docker · AWS 서울 서버
 - **AI 활용**: 고객 지시를 AI 작업 지침서로 정리해 변경 요청마다 근거를 남기고, AI가 구현한 결과를 자동 검사로 검증 — 테스트 329개 · 접근성(WCAG 2.2) 위반 0건 · Lighthouse 100점
 
 <a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="WorkSign"></a>
+
+| 4단계 발송 흐름 | 기능 한눈에 보기 | 모바일 |
+|---|---|---|
+| <img src="shots/projects/worksign/landing-flow.png" width="360"> | <img src="shots/projects/worksign/landing-features.png" width="300"> | <img src="shots/projects/worksign/landing-m.png" width="160"> |
+| **근로자 휴대폰 서명 (앱 설치 없음)** | | |
+| <img src="shots/projects/worksign/landing-worker.png" width="360"> | | |
+
 
 | 입력칸 지정 에디터 | 근로자 모바일 서명 |
 |---|---|
@@ -46,19 +69,24 @@
 |---|---|---|---|---|
 | <a href="https://stockup.kratos1.cloud"><img src="shots/projects/stockup/home.png" width="150"></a> | <img src="shots/projects/stockup/market.png" width="150"> | <img src="shots/projects/stockup/detail.png" width="150"> | <img src="shots/projects/stockup/order.png" width="150"> | <img src="shots/projects/stockup/learn.png" width="150"> |
 
-### 3. GTO KRATOS — 포커 전략 학습·게임 웹앱
+### 3. GTO KRATOS — 포커 전략 학습·코칭 웹앱
 **https://kratos1.cloud/gtokrato**
 
-포커 전략(GTO)을 공부하고 바로 실전처럼 연습하는 웹앱. 홀덤 방·Sit & Go, 바카라, 블랙잭을 게임 머니로 즐깁니다.
+포커 전략(GTO)을 레벨에 맞춰 배우고, 선택마다 채점받으며 실전처럼 연습하는 웹앱입니다.
 
-- **핵심 로직**: 실시간 홀덤 테이블(캐시·싯앤고·헤즈업) · 선택마다 GTO 기준으로 채점하는 코칭(EV 손실·169핸드 전략표·솔버) · 첫 방문 언어·국가 선택(시간대 자동 감지)
-- **만든 방법**: 외부 라이브러리 없는 Node 서버 · 게임 엔진 · SQLite + Supabase 이중 저장
-- **AI 활용**: 게임 규칙·확률 엔진과 실시간 방 서버를 AI와 함께 설계·구현하고, 버전마다 AI 검토로 규칙 오류를 잡아냄
+- **강점**: 첫 방문 국가·언어 선택(시간대 자동 감지) · 수준을 고르면 첫 주 미션 3개와 단계별 커리큘럼(진단 → EV 입문 → GTO 입문 → 포스트플랍 → 승급 시험) 제안 · 선택마다 GTO 기준으로 채점하는 연습·코칭
+- **만든 방법**: 외부 라이브러리 없는 Node 서버 · 게임·확률 엔진 · SQLite + Supabase 이중 저장
+- **AI 활용**: 게임 규칙·확률 엔진과 학습 흐름을 AI와 함께 설계·구현하고, 버전마다 AI 검토로 규칙 오류를 잡아냄
 
-<a href="https://kratos1.cloud/gtokrato"><img src="shots/projects/gtokrato/home.png" width="720" alt="GTO KRATOS"></a>
+<a href="https://kratos1.cloud/gtokrato"><img src="shots/projects/gtokrato/curriculum.png" width="720" alt="커리큘럼 제안"></a>
 
-| 홀덤 플레이 | GTO 코칭 (선택마다 채점·EV 손실·전략표) |
+| 국가·지역 선택 | 언어 선택 |
 |---|---|
+| <img src="shots/projects/gtokrato/region.png" width="480"> | <img src="shots/projects/gtokrato/language.png" width="480"> |
+| **학습 허브** | **연습 설정 (GTO 문제 훈련)** |
+| <img src="shots/projects/gtokrato/study.png" width="480"> | <img src="shots/projects/gtokrato/practice.png" width="480"> |
+
+---|---|
 | <img src="shots/projects/gtokrato/play.png" width="480"> | <img src="shots/projects/gtokrato/coach.png" width="480"> |
 | **첫 방문 언어 선택 (14개 언어)** | **국가·시간대 선택 (자동 감지)** |
 | <img src="shots/projects/gtokrato/language.png" width="480"> | <img src="shots/projects/gtokrato/region.png" width="480"> |
@@ -146,6 +174,18 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 
 ---
 
+## 그 밖의 프로그램
+
+### 넷플릭스 영어 단어장 (크롬 확장)
+넷플릭스 영어 자막에서 모르는 단어를 눌러 저장하고, 토익·비즈니스 빈출 등급까지 함께 보여 주는 단어장입니다.
+
+- **기능**: 자막 단어 클릭·드래그로 뜻·발음 저장 · 토익/비즈니스 태그와 ★ 중요도 · SM-2 간격 반복 복습 · Anki 내보내기 · 모바일 이어 복습
+- **만든 방법**: Chrome 확장(Manifest V3) · 바닐라 JS · Supabase 동기화
+
+<img src="shots/projects/netflix-vocab/vocab.png" width="480" alt="단어장 화면">
+
+---
+
 ## 웹사이트 디자인 시안
 
 링크나 이미지를 누르면 실제 사이트가 열립니다.
@@ -214,10 +254,3 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 <a href="https://cyb3rmaya.github.io/egattoc-wellness/"><img src="shots/designs/egattoc/home.png" width="49%" alt="웰니스 쇼핑몰"></a>
 
 - 쇼핑몰: https://cyb3rmaya.github.io/egattoc-wellness/
-
-### 청년 취업지원제도 안내 챗봇 (시제품)
-질문 몇 개로 받을 수 있는 지원금을 안내하는 챗봇 시제품.
-
-<a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/designs/barosijak/home.png" width="49%" alt="안내 챗봇"></a>
-
-- 챗봇: https://cyb3rmaya.github.io/barosijak-demo/
