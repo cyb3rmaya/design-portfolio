@@ -34,7 +34,7 @@
 ### 1. WorkSign — 모바일 전자근로계약서
 **https://worksign.co.kr**
 
-노무법인 의뢰로 만든 실서비스. 최근 랜딩을 4단계 흐름·기능 카드·근로자 휴대폰 시연 중심으로 전면 개편했습니다. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다.
+노무법인 의뢰로 만든 실서비스. 사업주가 한글·워드·PDF 계약서를 올려 입력칸을 지정하고 보내면, 근로자가 휴대폰으로 채우고 서명합니다. 서명 문서는 위·변조를 막도록 봉인됩니다. 랜딩은 4단계 흐름·기능 카드·근로자 휴대폰 시연 중심으로 개편했습니다.
 
 - **핵심 로직**: 문서 변환 → 입력칸 지정(텍스트·날짜·금액·서명·도장) → 일괄 발송 → 모바일 서명 → 봉인·보관 · 발송 실적·비회신 추적
 - **만든 방법**: Next.js 15 · Prisma · Postgres(Supabase) · 문서 처리 워커 · Docker · AWS 서울 서버
@@ -42,18 +42,15 @@
 
 <a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="WorkSign"></a>
 
-| 4단계 발송 흐름 | 기능 한눈에 보기 | 모바일 |
-|---|---|---|
-| <img src="shots/projects/worksign/landing-flow.png" width="360"> | <img src="shots/projects/worksign/landing-features.png" width="300"> | <img src="shots/projects/worksign/landing-m.png" width="160"> |
-| **근로자 휴대폰 서명 (앱 설치 없음)** | | |
-| <img src="shots/projects/worksign/landing-worker.png" width="360"> | | |
-
-
-| 입력칸 지정 에디터 | 근로자 모바일 서명 |
+| 4단계 발송 흐름 | 기능 한눈에 보기 |
 |---|---|
-| <img src="shots/projects/worksign/editor.png" width="480"> | <img src="shots/projects/worksign/sign.png" width="220"> |
+| <img src="shots/projects/worksign/landing-flow.png" width="480"> | <img src="shots/projects/worksign/landing-features.png" width="480"> |
+| **근로자 휴대폰 서명 안내 (앱 설치 없음)** | **입력칸 지정 에디터** |
+| <img src="shots/projects/worksign/landing-worker.png" width="480"> | <img src="shots/projects/worksign/editor.png" width="480"> |
 | **발송 마법사** | **발송 실적·비회신 추적** |
 | <img src="shots/projects/worksign/send.png" width="480"> | <img src="shots/projects/worksign/reports.png" width="480"> |
+| **모바일 랜딩** | **근로자 모바일 서명** |
+| <img src="shots/projects/worksign/landing-m.png" width="220"> | <img src="shots/projects/worksign/sign.png" width="220"> |
 
 <sub>화면 캡처는 가상 회사·가상 인물 데이터입니다.</sub>
 
@@ -81,16 +78,11 @@
 
 <a href="https://kratos1.cloud/gtokrato"><img src="shots/projects/gtokrato/curriculum.png" width="720" alt="커리큘럼 제안"></a>
 
-| 국가·지역 선택 | 언어 선택 |
+| 첫 방문 국가·지역 선택 (시간대 자동 감지) | 언어 선택 (14개 언어) |
 |---|---|
 | <img src="shots/projects/gtokrato/region.png" width="480"> | <img src="shots/projects/gtokrato/language.png" width="480"> |
 | **학습 허브** | **연습 설정 (GTO 문제 훈련)** |
 | <img src="shots/projects/gtokrato/study.png" width="480"> | <img src="shots/projects/gtokrato/practice.png" width="480"> |
-
----|---|
-| <img src="shots/projects/gtokrato/play.png" width="480"> | <img src="shots/projects/gtokrato/coach.png" width="480"> |
-| **첫 방문 언어 선택 (14개 언어)** | **국가·시간대 선택 (자동 감지)** |
-| <img src="shots/projects/gtokrato/language.png" width="480"> | <img src="shots/projects/gtokrato/region.png" width="480"> |
 
 ### 4. 무인 만화방 홈페이지 — 의뢰 제작
 **https://eonyang-comic.pages.dev/**
