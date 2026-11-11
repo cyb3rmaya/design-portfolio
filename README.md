@@ -5,7 +5,7 @@
 
 ## 고용노동부 고용24 AI 해커톤 출품작
 
-### 바로시작 — 국민취업지원제도 안내 시제품 (본선 진행 중)
+### 바로시작 — 국민취업지원제도 안내 시제품 (본선 진출 · 2차 심사 진행 중)
 **https://cyb3rmaya.github.io/barosijak-demo/**
 
 메뉴가 많아 막막한 구직자에게 나이 질문 하나로 시작해, 해야 할 일을 날짜별로 정리해 주는 안내 시제품입니다.
@@ -26,7 +26,8 @@
 | 1 | **WorkSign** · 모바일 전자근로계약서 | https://worksign.co.kr |
 | 2 | **청소년 주식 학습 모의투자 앱** | https://stockup.kratos1.cloud |
 | 3 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
-| 4 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
+| 4 | **무인 만화방 홈페이지** · 의뢰 제작 | https://eonyang-comic.pages.dev |
+| 5 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
 
 ---
 
@@ -91,7 +92,14 @@
 | **첫 방문 언어 선택 (14개 언어)** | **국가·시간대 선택 (자동 감지)** |
 | <img src="shots/projects/gtokrato/language.png" width="480"> | <img src="shots/projects/gtokrato/region.png" width="480"> |
 
-### 4. ZEUS(제우스) — macOS 한국어 AI 음성 비서
+### 4. 무인 만화방 홈페이지 — 의뢰 제작
+**https://eonyang-comic.pages.dev/**
+
+무인 만화방 의뢰로 만든 홈페이지. 도서 검색·이용 요금·오시는 길을 한 화면에 담았습니다.
+
+<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="무인 만화방"></a>
+
+### 5. ZEUS(제우스) — macOS 한국어 AI 음성 비서
 **개인 프로젝트 · macOS 데스크톱 앱**
 
 호출어나 박수로 부르면 듣고, Claude로 생각해 한국어로 대답하는 맥 AI 비서 '제우스'. 잠든 상태에서는 바탕화면 아이콘으로 깨우고, 깨어나면 날씨·메일을 정리한 음성 브리핑으로 하루를 시작합니다. 날씨·유튜브·음악·연락처·전화·메일·캘린더를 말로 다루고, 되돌리기 어려운 작업은 "실행 확인"이라고 말해야만 실행합니다.
@@ -243,13 +251,6 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/"><img src="shots/designs/k-labor/home.png" width="32%" alt="홈페이지"></a>
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/ai-check/"><img src="shots/designs/k-labor/ai-check.png" width="32%" alt="AI 노무 자가진단"></a>
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/admin/"><img src="shots/designs/k-labor/admin.png" width="32%" alt="관리자 대시보드"></a>
-
-### 24시간 만화카페 홈페이지
-도서 검색·이용 요금·오시는 길을 한 화면에 담은 만화카페 홈페이지.
-
-- 만화카페: https://eonyang-comic.pages.dev/
-
-<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="만화카페"></a>
 
 ### 웰니스 쇼핑몰
 식품·바디케어 웰니스 쇼핑몰.
