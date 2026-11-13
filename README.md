@@ -62,6 +62,10 @@
 
 - **디자인 포인트**: 새싹 캐릭터 '시작이'가 고용24 화면까지 따라다니며 대화에서 기억한 정보로 신청서를 채워 주고, 단계를 마치면 도장과 완주 상장을 줍니다. AI 답변을 기다리는 동안에는 파란 물결 애니메이션으로 진행 중임을 보여 줍니다.
 
+**사용 흐름 영상 (25초)** — 체험 인물 선택 → 계획·대화 → 고용24 신청 순서 → 시작이가 이력서 채우기 · [MP4로 보기](shots/projects/barosijak/flow.mp4)
+
+<img src="shots/projects/barosijak/flow.gif" width="720">
+
 | 시작 대화 | 내 날짜 일정 | 오늘의 미션 |
 |---|---|---|
 | <a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/projects/barosijak/1-chat.png" width="220"></a> | <img src="shots/projects/barosijak/2-schedule.png" width="220"> | <img src="shots/projects/barosijak/3-mission.png" width="220"> |
