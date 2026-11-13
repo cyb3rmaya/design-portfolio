@@ -13,6 +13,7 @@
 | 4 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
 | 5 | **무인 만화방 홈페이지** · 의뢰 제작 | https://eonyang-comic.pages.dev |
 | 6 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
+| 7 | **HR 플랫폼** · 중소기업 인사·노무 통합 관리 (개발 중) | https://kratos1.cloud/p/hr-89451b/ |
 
 ---
 
@@ -181,6 +182,29 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 ```
 
 </details>
+
+### 7. HR 플랫폼 — 중소기업 인사·노무 통합 관리 (개발 중 · 정식 출시 전)
+**https://kratos1.cloud/p/hr-89451b/**
+
+직원 20~50명 규모 회사가 근태·급여·계약·4대보험·교육을 한곳에서 처리하고, 노무법인이 필요한 부분만 검토하는 HR 플랫폼입니다. 현재 **빌딩 단계(정식 출시 전)** 시안으로, 화면의 회사·직원 데이터는 모두 가상입니다.
+
+- **관리자**: 이번 주 할 일(법정 기한 D-day) · 근태·연차 · 임금계산(연장·야간·휴일 수당) · 퇴직금 산정 · 인건비 분석 · 4대보험 취득·상실 · 법정의무교육 · 전자결재
+- **직원 앱**: 위치 확인 출퇴근 · 남은 연차 · 연장근로 현황 · 급여명세서 · 신청·결재
+- **AI 비서**: "52시간 위험한 직원 있어?"처럼 물으면 근태·급여 데이터를 조회해 답하고, 승인 같은 실행은 확인 버튼을 눌러야 진행
+- **AI 법령 안내**: 답변마다 법령 조항·계산 근거를 붙이고, 개별 판단이 필요한 질문은 답하지 않고 노무사 검토로 연결
+- **노무 자가진단**: 근로계약서·연장근로·최저임금 등 위반 위험을 점검하고 해야 할 조치를 정리
+
+**AI 비서 답변 대기 화면** — 질문하면 파란 빛이 카드를 훑는 대기 애니메이션 뒤에 답이 나옵니다
+
+<a href="https://kratos1.cloud/p/hr-89451b/overview/"><img src="shots/designs/hr-platform/ai-assistant.gif" width="720"></a>
+
+| 이번 주 할 일 (관리자 홈) | 직원 앱 |
+|---|---|
+| <img src="shots/designs/hr-platform/overview.png" width="480"> | <img src="shots/designs/hr-platform/app.png" width="220"> |
+| **임금계산** | **인건비 분석** |
+| <img src="shots/designs/hr-platform/payroll.png" width="480"> | <img src="shots/designs/hr-platform/cost.png" width="480"> |
+| **AI 법령 안내 (근거 표기)** | **노무 자가진단** |
+| <img src="shots/designs/hr-platform/chatbot.png" width="480"> | <img src="shots/designs/hr-platform/diagnosis.png" width="480"> |
 
 ---
 
