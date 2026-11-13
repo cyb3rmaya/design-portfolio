@@ -25,7 +25,7 @@
 - **만든 방법**: Next.js 15 · Prisma · Postgres(Supabase) · 문서 처리 워커 · Docker · AWS 서울 서버
 - **AI 활용**: 고객 지시를 AI 작업 지침서로 정리해 변경 요청마다 근거를 남기고, AI가 구현한 결과를 자동 검사로 검증 — 테스트 329개 · 접근성(WCAG 2.2) 위반 0건 · Lighthouse 100점
 
-<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.png" width="720" alt="WorkSign"></a>
+<a href="https://worksign.co.kr"><img src="shots/projects/worksign/landing.gif" width="720" alt="WorkSign"></a>
 
 | 4단계 발송 흐름 | 기능 한눈에 보기 |
 |---|---|
