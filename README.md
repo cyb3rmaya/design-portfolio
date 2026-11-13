@@ -3,31 +3,16 @@
 기획부터 배포까지 혼자 맡아, AI(Claude Code·Codex)를 개발 파트너로 써서 만든 결과물입니다.
 **AI가 코드를 쓰고, 저는 기획·설계·판단·검수를 맡습니다.** 명세 → 작업 계획 → 구현 → AI 다관점 검토 → 수정 순서로 반복합니다.
 
-## 고용노동부 고용24 AI 해커톤 출품작
-
-### 바로시작 — 국민취업지원제도 안내 시제품 (본선 진출 · 2차 심사 진행 중)
-**https://cyb3rmaya.github.io/barosijak-demo/**
-
-메뉴가 많아 막막한 구직자에게 나이 질문 하나로 시작해, 해야 할 일을 날짜별로 정리해 주는 안내 시제품입니다.
-
-- **핵심 로직**: 대화로 상황 파악 → 수급자격 통지일 등 날짜로 이번 주 할 일·다가오는 기한·놓치면 사라지는 것 분류 → 큰 절차를 하루 한 가지 미션으로 쪼갬
-- **신뢰 설계**: 금액·기한은 AI가 만들지 않고 사람이 원문과 대조한 고정표만 사용 · 모든 안내에 업무매뉴얼 쪽수 근거 표기 · 자격 판정이 아님을 명시(최종 판단은 고용센터)
-
-| 시작 대화 | 내 날짜 일정 | 오늘의 미션 |
-|---|---|---|
-| <a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/projects/barosijak/1-chat.png" width="220"></a> | <img src="shots/projects/barosijak/2-schedule.png" width="220"> | <img src="shots/projects/barosijak/3-mission.png" width="220"> |
-
----
-
 ## 대표 프로젝트
 
 | | 서비스 | 링크 |
 |---|---|---|
 | 1 | **WorkSign** · 모바일 전자근로계약서 | https://worksign.co.kr |
 | 2 | **청소년 주식 학습 모의투자 앱** | https://stockup.kratos1.cloud |
-| 3 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
-| 4 | **무인 만화방 홈페이지** · 의뢰 제작 | https://eonyang-comic.pages.dev |
-| 5 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
+| 3 | **바로시작** · 고용24 AI 해커톤 출품작 (본선 2차 심사 중) | https://cyb3rmaya.github.io/barosijak-demo/ |
+| 4 | **GTO KRATOS** · 포커 전략 학습·게임 웹앱 | https://kratos1.cloud/gtokrato |
+| 5 | **무인 만화방 홈페이지** · 의뢰 제작 | https://eonyang-comic.pages.dev |
+| 6 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
 
 ---
 
@@ -67,7 +52,29 @@
 |---|---|---|---|---|
 | <a href="https://stockup.kratos1.cloud"><img src="shots/projects/stockup/home.png" width="150"></a> | <img src="shots/projects/stockup/market.png" width="150"> | <img src="shots/projects/stockup/detail.png" width="150"> | <img src="shots/projects/stockup/order.png" width="150"> | <img src="shots/projects/stockup/learn.png" width="150"> |
 
-### 3. GTO KRATOS — 포커 전략 학습·코칭 웹앱
+### 3. 바로시작 — 고용24 AI 해커톤 출품작 (본선 진출 · 2차 심사 진행 중)
+**https://cyb3rmaya.github.io/barosijak-demo/**
+
+메뉴가 많아 막막한 구직자에게 나이 질문 하나로 시작해, 해야 할 일을 날짜별로 정리해 주는 안내 시제품입니다.
+
+- **핵심 로직**: 대화로 상황 파악 → 수급자격 통지일 등 날짜로 이번 주 할 일·다가오는 기한·놓치면 사라지는 것 분류 → 큰 절차를 하루 한 가지 미션으로 쪼갬
+- **신뢰 설계**: 금액·기한은 AI가 만들지 않고 사람이 원문과 대조한 고정표만 사용 · 모든 안내에 업무매뉴얼 쪽수 근거 표기 · 자격 판정이 아님을 명시(최종 판단은 고용센터)
+
+- **디자인 포인트**: 새싹 캐릭터 '시작이'가 고용24 화면까지 따라다니며 대화에서 기억한 정보로 신청서를 채워 주고, 단계를 마치면 도장과 완주 상장을 줍니다.
+
+| 시작 대화 | 내 날짜 일정 | 오늘의 미션 |
+|---|---|---|
+| <a href="https://cyb3rmaya.github.io/barosijak-demo/"><img src="shots/projects/barosijak/1-chat.png" width="220"></a> | <img src="shots/projects/barosijak/2-schedule.png" width="220"> | <img src="shots/projects/barosijak/3-mission.png" width="220"> |
+
+| 따라다니는 시작이 (고용24 신청 순서) | 시작이가 채우는 이력서 등록 |
+|---|---|
+| <img src="shots/projects/barosijak/5-companion.png" width="480"> | <img src="shots/projects/barosijak/6-autofill.png" width="480"> |
+
+**완주 상장** — 7단계를 마치면 시작이가 주는 상장
+
+<img src="shots/projects/barosijak/4-award.png" width="640">
+
+### 4. GTO KRATOS — 포커 전략 학습·코칭 웹앱
 **https://kratos1.cloud/gtokrato**
 
 포커 전략(GTO)을 레벨에 맞춰 배우고, 선택마다 채점받으며 실전처럼 연습하는 웹앱입니다.
@@ -84,14 +91,14 @@
 | **학습 허브** | **연습 설정 (GTO 문제 훈련)** |
 | <img src="shots/projects/gtokrato/study.png" width="480"> | <img src="shots/projects/gtokrato/practice.png" width="480"> |
 
-### 4. 무인 만화방 홈페이지 — 의뢰 제작
+### 5. 무인 만화방 홈페이지 — 의뢰 제작
 **https://eonyang-comic.pages.dev/**
 
 무인 만화방 의뢰로 만든 홈페이지. 도서 검색·이용 요금·오시는 길을 한 화면에 담았습니다.
 
 <a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="무인 만화방"></a>
 
-### 5. ZEUS(제우스) — macOS 한국어 AI 음성 비서
+### 6. ZEUS(제우스) — macOS 한국어 AI 음성 비서
 **개인 프로젝트 · macOS 데스크톱 앱**
 
 호출어나 박수로 부르면 듣고, Claude로 생각해 한국어로 대답하는 맥 AI 비서 '제우스'. 잠든 상태에서는 바탕화면 아이콘으로 깨우고, 깨어나면 날씨·메일을 정리한 음성 브리핑으로 하루를 시작합니다. 날씨·유튜브·음악·연락처·전화·메일·캘린더를 말로 다루고, 되돌리기 어려운 작업은 "실행 확인"이라고 말해야만 실행합니다.
