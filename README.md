@@ -98,9 +98,27 @@
 ### 5. 무인 만화방 홈페이지 — 의뢰 제작
 **https://eonyang-comic.pages.dev/**
 
-무인 만화방 의뢰로 만든 홈페이지. 도서 검색·이용 요금·오시는 길을 한 화면에 담았습니다.
+무인 만화방 의뢰로 만든 홈페이지와 사장님용 도서 관리자입니다. 손님은 책 위치와 완결 여부를 바로 찾고, 사장님은 엑셀로 도서 목록을 관리합니다.
 
-<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="49%" alt="무인 만화방"></a>
+- **손님 화면**: 초성까지 되는 도서 검색(책장 위치·완결 여부) · 이용 요금 · 24시간 안내 · 찾아오시는 길 · 전화 문의
+- **관리자**: 비밀번호 로그인 → 도서 목록 → 추가·수정·삭제 → 엑셀 업로드(교체/추가)·다운로드 · 비밀번호 변경
+- **만든 방법**: 정적 HTML·CSS·JS · Cloudflare Pages Functions · D1(SQLite) · 무료 호스팅
+
+<a href="https://eonyang-comic.pages.dev/"><img src="shots/designs/eonyang/home.png" width="720" alt="메인"></a>
+
+| **도서 검색 결과** | **이용 요금** |
+|---|---|
+| <img src="shots/designs/eonyang/search.png" width="480"> | <img src="shots/designs/eonyang/rates.png" width="480"> |
+
+**관리자 흐름** (테스트 데이터)
+
+| **① 관리자 로그인** | **② 도서 목록** |
+|---|---|
+| <img src="shots/designs/eonyang/a1-login.png" width="480"> | <img src="shots/designs/eonyang/a2-list.png" width="480"> |
+| **③ 도서 추가** | **④ 도서명으로 찾기** |
+| <img src="shots/designs/eonyang/a3-add.png" width="480"> | <img src="shots/designs/eonyang/a4-filter.png" width="480"> |
+
+<img src="shots/designs/eonyang/mobile.png" width="260" alt="모바일">
 
 ### 6. ZEUS(제우스) — macOS 한국어 AI 음성 비서
 **개인 프로젝트 · macOS 데스크톱 앱**
