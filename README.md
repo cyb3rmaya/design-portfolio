@@ -14,6 +14,7 @@
 | 5 | **무인 만화방 홈페이지** · 의뢰 제작 | https://eonyang-comic.pages.dev |
 | 6 | **ZEUS(제우스)** · macOS 한국어 AI 음성 비서 | 개인 프로젝트 (데스크톱 앱) |
 | 7 | **HR 플랫폼** · 중소기업 인사·노무 통합 관리 (개발 중) | https://kratos1.cloud/p/hr-89451b/ |
+| 8 | **대통령 시뮬레이터** · 지도 기반 국정 시뮬레이션 게임 (프로토타입) | 개인 프로젝트 (개발 중) |
 
 ---
 
@@ -205,6 +206,20 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 | <img src="shots/designs/hr-platform/payroll.png" width="480"> | <img src="shots/designs/hr-platform/cost.png" width="480"> |
 | **AI 법령 안내 (근거 표기)** | **노무 자가진단** |
 | <img src="shots/designs/hr-platform/chatbot.png" width="480"> | <img src="shots/designs/hr-platform/diagnosis.png" width="480"> |
+
+---
+
+### 8. 대통령 시뮬레이터 — 지도 기반 국정 시뮬레이션 게임 (프로토타입)
+가로형 모바일 게임입니다. 한 턴에 결정 3개를 고르면 지지율·경제·안보·국회·스캔들이 움직이고, 몇 턴 뒤 뉴스·시위·전쟁·탄핵으로 결과가 돌아옵니다.
+
+- **기능**: 17개 시·도 민심 지도 · 결재 문서 카드 선택 · 내각 인사 · 전시 작전 화면 · 탄핵·선거 이벤트
+- **만든 방법**: React · TypeScript · PixiJS(지도) · Zustand · Zod 이벤트 데이터 · Vitest 엔진 테스트
+
+| **지도·지표** | **결재 문서 카드** |
+|---|---|
+| <img src="shots/projects/president-sim/map.jpg" width="480"> | <img src="shots/projects/president-sim/card.jpg" width="480"> |
+| **전시 작전** | **탄핵 소추 표결** |
+| <img src="shots/projects/president-sim/war.jpg" width="480"> | <img src="shots/projects/president-sim/impeach.jpg" width="480"> |
 
 ---
 
