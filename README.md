@@ -259,9 +259,9 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 
 링크나 이미지를 누르면 실제 사이트가 열립니다.
 
-> 고객사의 공개 동의를 받지 못한 시안은 캡처의 로고·회사명을 블러 처리했고, 이름도 일반 명칭으로 바꿨습니다. 모든 시안은 직접 작성한 소스코드로 만들어 제 도메인(kratos1.cloud 등)에 올린 것입니다.
+### 자체 사이트
 
-### 크라토스 (외주 개발사 홈페이지)
+#### 크라토스 (외주 개발사 홈페이지)
 외주 개발사 소개·견적 상담 사이트. 체험형 데모 10종을 함께 운영.
 
 <a href="https://kratos1.cloud/"><img src="shots/designs/kratos/home.png" width="49%" alt="홈"></a>
@@ -270,7 +270,11 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 - 홈: https://kratos1.cloud/
 - 데모 모음: https://kratos1.cloud/demos
 
-### 에스컬레이터 제조사 홈페이지 (시안 3종)
+### 고객사 제안 시안 (계약 전 · 마크 가림)
+
+> 아래 시안은 계약 전 고객사와 공개 협의가 이뤄지지 않은 건이라, 로고·회사명 등 마크를 가리고 직접 작성한 기존 코드로 재배포했음을 알려드립니다. 이름도 일반 명칭으로 바꿨습니다.
+
+#### 에스컬레이터 제조사 홈페이지 (시안 3종)
 같은 회사를 세 가지 방향(기본·현대형·백과사전형)으로 제안한 시안.
 
 <a href="https://kratos1.cloud/escalator/"><img src="shots/designs/k-escalator/base.png" width="32%" alt="기본형"></a>
@@ -281,7 +285,7 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 - 현대형: https://kratos1.cloud/p/ke-hyundai/
 - 백과사전형: https://kratos1.cloud/p/ke-hpedia/
 
-### 인사·조직 컨설팅사 홈페이지 (시안 2종)
+#### 인사·조직 컨설팅사 홈페이지 (시안 2종)
 컨설팅 회사의 신뢰감을 살린 두 가지 레이아웃 시안.
 
 <a href="https://kratos1.cloud/p/epic/"><img src="shots/designs/epic/a.png" width="49%" alt="1안"></a>
@@ -290,7 +294,7 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 - 1안: https://kratos1.cloud/p/epic/
 - 2안: https://kratos1.cloud/p/epic-jbfg-1009/
 
-### 노무법인 홈페이지 · 자가진단 · 관리자
+#### 노무법인 홈페이지 · 자가진단 · 관리자
 노무법인 홈페이지 리뉴얼. 관리자 대시보드와 AI 노무 자가진단까지 한 세트로 설계.
 
 - 홈페이지: https://kratos1.cloud/p/klabor-7f3c9a/
@@ -301,7 +305,7 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/ai-check/"><img src="shots/designs/k-labor/ai-check.png" width="32%" alt="AI 노무 자가진단"></a>
 <a href="https://kratos1.cloud/p/klabor-7f3c9a/admin/"><img src="shots/designs/k-labor/admin.png" width="32%" alt="관리자 대시보드"></a>
 
-### 웰니스 쇼핑몰
+#### 웰니스 쇼핑몰
 식품·바디케어 웰니스 쇼핑몰.
 
 <a href="https://cyb3rmaya.github.io/egattoc-wellness/"><img src="shots/designs/egattoc/home.png" width="49%" alt="웰니스 쇼핑몰"></a>
