@@ -79,9 +79,9 @@
 ### 4. GTO KRATOS — 포커 전략 학습·코칭 웹앱
 **https://kratos1.cloud/gtokrato**
 
-포커 전략(GTO)을 레벨에 맞춰 배우고, 선택마다 채점받으며 실전처럼 연습하는 웹앱입니다.
+포커 전략(GTO)을 레벨에 맞춰 배우고, 선택마다 채점받으며, 봇과 실제 핸드를 치면서 실시간 코치를 받는 학습 앱입니다.
 
-- **강점**: 첫 방문 국가·언어 선택(시간대 자동 감지) · 수준을 고르면 첫 주 미션 3개와 단계별 커리큘럼(진단 → EV 입문 → GTO 입문 → 포스트플랍 → 승급 시험) 제안 · 선택마다 GTO 기준으로 채점하는 연습·코칭
+- **강점**: 첫 방문 국가·언어 선택(시간대 자동 감지) · 수준을 고르면 첫 주 미션 3개와 단계별 커리큘럼(진단 → EV 입문 → GTO 입문 → 포스트플랍 → 승급 시험) 제안 · 선택마다 GTO 기준으로 채점하는 연습 · 포지션별 프리플랍 레인지 차트 · 봇과 실제 핸드를 치며 받는 실시간 코치
 - **만든 방법**: 외부 라이브러리 없는 Node 서버 · 게임·확률 엔진 · SQLite + Supabase 이중 저장
 - **AI 활용**: 게임 규칙·확률 엔진과 학습 흐름을 AI와 함께 설계·구현하고, 버전마다 AI 검토로 규칙 오류를 잡아냄
 
@@ -92,6 +92,8 @@
 | <img src="shots/projects/gtokrato/region.png" width="480"> | <img src="shots/projects/gtokrato/language.png" width="480"> |
 | **학습 허브** | **연습 설정 (GTO 문제 훈련)** |
 | <img src="shots/projects/gtokrato/study.png" width="480"> | <img src="shots/projects/gtokrato/practice.png" width="480"> |
+| **프리플랍 레인지 차트** | **봇 대전 · 실시간 코치** |
+| <img src="shots/projects/gtokrato/chart.png" width="480"> | <img src="shots/projects/gtokrato/bot-coach.png" width="480"> |
 
 ### 5. 무인 만화방 홈페이지 — 의뢰 제작
 **https://eonyang-comic.pages.dev/**
@@ -249,15 +251,6 @@ export function matchLocalIntent(utterance: string, enabled: readonly LocalInten
 
 - 홈: https://kratos1.cloud/
 - 데모 모음: https://kratos1.cloud/demos
-
-### 토너먼트 홀덤 트레이너
-랜덤 스팟마다 한 수를 고르면 GTO·ICM 기준으로 채점·해설하고, 봇과 실제 핸드를 치며 실시간 코치를 받는 학습 앱.
-
-- 트레이너: https://holdem-trainer-8hzx.onrender.com/
-
-<a href="https://holdem-trainer-8hzx.onrender.com/"><img src="shots/designs/holdem/trainer.png" width="32%" alt="스팟 채점"></a>
-<a href="https://holdem-trainer-8hzx.onrender.com/"><img src="shots/designs/holdem/bot.png" width="32%" alt="봇 대전·실시간 코치"></a>
-<a href="https://holdem-trainer-8hzx.onrender.com/"><img src="shots/designs/holdem/home.png" width="32%" alt="학습 홈"></a>
 
 ### 에스컬레이터 제조사 홈페이지 (시안 3종)
 같은 회사를 세 가지 방향(기본·현대형·백과사전형)으로 제안한 시안.
